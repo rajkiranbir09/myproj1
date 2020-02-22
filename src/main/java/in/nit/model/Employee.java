@@ -1,9 +1,15 @@
 package in.nit.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class Employee {
-
+     @Id
+     @Column(name="ID")
 	private Integer empId;
+     
 	private String empName;
 	private Double empSalary;
 	private String empAdd;
